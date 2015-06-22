@@ -1,0 +1,653 @@
+<!DOCTYPE HTML>
+<!--[if IE 8]> <html class="ie8 no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- begin meta -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=10">
+	<meta name="description" content="Finesse is a responsive business and portfolio theme carefully handcrafted using the latest technologies. It features a clean design, as well as extended functionality that will come in very handy.">
+	<meta name="keywords" content="Finesse, responsive business portfolio theme, HTML5, CSS3, clean design">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- end meta -->
+	
+    <!-- begin CSS -->
+    <%= stylesheet_link_tag "color.css" %>
+    <!-- end CSS -->
+
+	
+	<title>Главная</title>
+</head>
+
+<body>
+<!-- begin container -->
+<div id="wrap">
+	<!-- begin header -->
+    <header id="header" class="container">
+        <!-- begin header top -->
+        <section id="header-top" class="clearfix">
+            <!-- begin header left -->
+            <div class="one-half">
+                <h1 id="logo"><a href="index.html"><%=image_tag "logo.png"%></a></h1>
+            </div>
+            <!-- end header left -->
+            
+            <!-- begin header right -->
+            <div class="one-half column-last">
+                <!-- begin contact info -->
+                <div class="contact-info">
+                    <p class="phone">(846) 205-60-88</p>
+                    <p class="email"><a href="mailto:sales@ckrubin.ru">sales@ckrubin.ru</a></p>
+                </div>
+                <!-- end contact info -->
+            </div>
+            <!-- end header right -->
+        </section>
+        <!-- end header top -->
+        
+        <!-- begin navigation bar -->
+        <section id="navbar" class="clearfix">
+            <!-- begin navigation -->
+            <nav id="nav">
+                <ul id="navlist" class="clearfix">
+                    <li class="current"><a href="index.html">ГЛАВНАЯ</a></li>
+
+                    <li><a href="contact.php">О КОМПАНИИ</a></li>
+
+                    <li><a href="elements.html" data-rel="submenu1">УСЛУГИ</a>
+                        <ul id="submenu1" class="ddsubmenustyle">
+                            <li><a href="elements.html">Благоустройство</a></li>
+                                <ul id="submenu2" class="ddsubmenustyle">
+                                    <li><a href="elements.html">Асфальтирование</a></li>
+                                    <li><a href="elements.html">Озеленение</a></li>
+                                </ul>
+                            <li><a href="grid-columns.html">Кровельные работы</a></li>
+                            <li><a href="pricing-tables.html">Металлоконструкции</a></li>
+                            <li><a href="images.html">Заборы</a></li>
+                            <li><a href="video.html">Отделочные работы</a></li>
+                            <li><a href="video.html">Малоэтажное строительство</a></li>
+                            <li><a href="video.html">Отопление</a></li>
+                            <li><a href="video.html">Водоснабжение</a></li>
+                            <li><a href="video.html">Канализация</a></li>
+                            <li><a href="video.html">Электромонтажные работы</a></li>
+                            <li><a href="video.html">Бассейны</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="portfolio.html" data-rel="submenu2">ВЫПОЛНЕННЫЕ РАБОТЫ</a></li>
+
+                    <li><a href="contact.php">КОНТАКТЫ</a></li>
+
+                </ul>
+            </nav>
+            <!-- end navigation -->
+            
+            <!-- begin search form -->
+            <form id="search-form" action="search.php" method="get">
+                <input id="s" type="text" name="s" placeholder="Search &hellip;" style="display: none;">
+                <input id="search-submit" type="submit" name="search-submit" value="Search">
+            </form>
+            <!-- end search form -->
+        </section>
+        <!-- end navigation bar -->
+        
+    </header>
+    <!-- end header -->
+    
+    <!-- begin content -->
+    <section id="content" class="container clearfix">
+        <!-- begin slider -->
+        <section id="slider-home">
+            <div class="flex-container">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="./slider/slides/metall.jpg" alt="Layout">
+                            <div class="flex-caption">
+                                <h2>Металлоконструкции</h2>
+                                <p>Изготовление и монтаж металлоконструкций по широкому профилю назначений.</p>
+                            </div>
+                        </li>
+                        <li>
+                        <img src="./slider/slides/building.jpg" alt="Villa">
+                            <div class="flex-caption">
+                                <h2>Малоэтажное строительство</h2>
+                                <p>Полный спектр услуг в сфере малоэтажного строительства.</p>
+                            </div>
+                        </li>
+                        <li>
+                        <img src="./slider/slides/earthworks.png" alt="Building">
+                              <div class="flex-caption">
+                                <h2>Земляные работы</h2>
+                                <p>Максимальная эффективность земляных работ в самые короткие сроки.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./slider/slides/asphalting.jpg" alt="Brown Living Room">
+                            <div class="flex-caption">
+                                <h2>Дорожные работы</h2>
+                                <p>Строительство дорог, площадок, и благоустройство территорий.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./slider/slides/beautyfication.jpg" alt="Brown Dining Room">
+                            <div class="flex-caption">
+                                <h2>Благоустройство и озеленение</h2>
+                                <p>Проведение комплекса мероприятий направленных на придание территории эстетически привлекательного внешнего вида.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./slider/slides/fence.jpg" alt="Brown Dining Room">
+                            <div class="flex-caption">
+                                <h2>Изготовление заборов</h2>
+                                <p>Изготовление заборов и ограждений из различных материалов и их сочетаний.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./slider/slides/sewerage.png" alt="Brown Dining Room">
+                            <div class="flex-caption">
+                                <h2>Канализация и водоснабжение</h2>
+                                <p>Проектирование, монтаж и обслуживание систем канализации, вентиляции, водоснабжения и отопления.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./slider/slides/finishing.jpg" alt="Brown Dining Room">
+                            <div class="flex-caption">
+                                <h2>Отделочные работы</h2>
+                                <p>Работы по отделке стен и потолка, укладке напольных покрытий а также иные виды работ.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./slider/slides/electrician.jpg" alt="Brown Dining Room">
+                            <div class="flex-caption">
+                                <h2>Электромонтажные работы</h2>
+                                <p>Выполнение работы качественно, в соответствии с действующими нормативами, всегда укладываясь в намеченные сроки и бюджет.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./slider/slides/swimming_pool.jpg" alt="Brown Dining Room">
+                            <div class="flex-caption">
+                                <h2>Строительство бассейнов</h2>
+                                <p>Каждый бассейн является неповторимым, приносит множество положительных эмоций и дарит отличное настроение.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end slider -->
+        
+        <!-- begin infobox -->
+        <section>
+            <div class="infobox">
+                <div class="infobox-inner">
+                    <a class="button large" href="http://themeforest.net/user/ixtendo/portfolio">Learn More</a>
+                    <div class="with-button">
+                        <h2>Responsive Business &amp; Portfolio Theme with a Refreshingly Clean Design</h2>
+                        <p>Carefully handcrafted using the latest technologies, Finesse features a clean design, as well as extended functionality that will come in very handy. Take a tour and discover its features!</p>
+                    </div>
+                    <a class="button large mobile-button" href="http://themeforest.net/user/ixtendo/portfolio">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <!-- end infobox -->
+        
+        <!-- begin services -->
+        <section>
+            <h2>Наши услуги <span class="more">&ndash; <a href="services.html">Посмотреть все услуги &raquo;</a></span></h2> 
+            
+            <!-- begin iconbox carousel -->
+            <ul class="iconbox-carousel">
+                <li>
+                    <div class="iconbox computer">
+                        <h4><a href="services.html#responsive-layouts"><span class="iconbox-icon"></span>Responsive Layouts</a></h4>
+                        <p>Layouts that scale gracefully across varying screen sizes.</p> 
+                    </div>
+                </li>
+                <li>
+                    <div class="iconbox mouse">
+                        <h4><a href="services.html#html5-css3-code"><span class="iconbox-icon"></span>HTML5 &amp; CSS3 Code</a></h4>
+                        <p>Standards-compliant and cross-browser HTML/CSS code.</p>   
+                    </div>
+                </li>
+                <li>
+                    <div class="iconbox applications">
+                        <h4><a href="services.html#clean-design"><span class="iconbox-icon"></span>Clean Design</a></h4>
+                        <p>Professional, clutter-free and aesthetically simple design.</p>   
+                    </div>
+                </li>
+                <li>
+                    <div class="iconbox cog">
+                        <h4><a href="services.html#cms-driven-websites"><span class="iconbox-icon"></span>CMS-Driven Websites</a></h4>
+                        <p>CMS-driven websites that you can easily customize.</p>  
+                    </div>
+                </li>
+                <li>
+                    <div class="iconbox globe">
+                        <h4><a href="services.html#search-engine-optimization"><span class="iconbox-icon"></span>Search Engine Optimization</a></h4>
+                        <p>Get the maximum exposure from search engines.</p>  
+                    </div>
+                </li>
+                <li>
+                    <div class="iconbox write">
+                        <h4><a href="services.html#copywriting"><span class="iconbox-icon"></span>Copywriting</a></h4>
+                        <p>Creative and engaging words that provoke action.</p> 
+                    </div>
+                </li>
+                <li>
+                    <div class="iconbox address-book">
+                        <h4><a href="services.html#customer-support"><span class="iconbox-icon"></span>Customer Support</a></h4>
+                        <p>Professional customer service that exceeds expectations.</p>   
+                    </div>
+                </li>
+                <li>
+                    <div class="iconbox chemical">
+                        <h4><a href="services.html#it-solutions"><span class="iconbox-icon"></span>IT Solutions</a></h4>
+                        <p>Connecting technology to your business needs.</p>
+                    </div>
+                </li>
+            </ul>
+            <!-- end iconbox carousel -->
+        </section>
+        <!-- end services -->
+
+        <!-- begin selected projects -->
+        <section>
+            <h2>Последние проекты <span class="more">&ndash; <a href="portfolio.html">Посмотреть все проекты &raquo;</a></span></h2>
+
+            <!-- begin project carousel -->
+            <ul class="project-carousel">
+                <li class="entry">
+                    <div class="entry-image">
+                        <a class="fancybox" href="./../entries/full-size/dining-white.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/dining-white-220x130.png" alt=""></a>
+                    </div>
+                    <h4 class="entry-title"><a href="portfolio-item-image.html">White Dining Room</a></h4>
+                    <div class="entry-content">
+                        <p>Image project with lightbox.</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-image">
+                        <a class="fancybox" data-fancybox-group="gallery-living-large-windows" href="./../entries/full-size/living-large-windows.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/living-large-windows-220x130.png" alt=""></a>
+                        <a class="fancybox invisible" data-fancybox-group="gallery-living-large-windows" href="./../entries/full-size/living-brown.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/living-brown-220x130.png" alt=""></a>
+                        <a class="fancybox invisible" data-fancybox-group="gallery-living-large-windows" href="./../entries/full-size/dining-and-living-cream.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/dining-and-living-cream-220x130.png" alt=""></a>
+                    </div>
+                    <h4 class="entry-title"><a href="portfolio-item-image.html">Living with Large Windows</a></h4>
+                    <div class="entry-content">
+                        <p>Gallery project with lightbox.</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-slider">
+                        <ul>
+                            <li><a class="fancybox" data-fancybox-group="gallery-living-brown" href="./../entries/full-size/living-brown.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/living-brown-220x130.png" alt=""></a></li>
+                            <li style="display: none;"><a class="fancybox" data-fancybox-group="gallery-living-brown" href="./../entries/full-size/dining-and-living-cream.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/dining-and-living-cream-220x130.png" alt=""></a></li>
+                            <li style="display: none;"><a class="fancybox" data-fancybox-group="gallery-living-brown" href="./../entries/full-size/living-white.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/living-white-220x130.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <h4 class="entry-title"><a href="portfolio-item-slider.html">Brown Living Room</a></h4>
+                    <div class="entry-content">
+                        <p>Gallery project with slider and lightbox.</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-video">
+                        <video width="220" height="130" style="width: 100%; height: 100%;" poster="./../entries/220x130/dining-and-living-cream-220x130.png" controls preload="none">
+                            <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+                            <source type="video/mp4" src="media/echo-hereweare.mp4" />
+                            <!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
+                            <source type="video/webm" src="media/echo-hereweare.webm" />
+                            <!-- Ogg/Vorbis for older Firefox and Opera versions -->
+                            <source type="video/ogg" src="media/echo-hereweare.ogv" />
+                            <!-- Optional: Add subtitles for each language -->
+                            <track kind="subtitles" src="media/mediaelement.srt" srclang="en" />
+                            <!-- Optional: Add chapters -->
+                            <track kind="chapters" src="#" srclang="en" />
+                            <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
+                            <object type="application/x-shockwave-flash" data="./flashmediaelement.swf">
+                                <param name="movie" value="./flashmediaelement.swf" />
+                                <param name="flashvars" value="controls=true&amp;file=media/echo-hereweare.mp4" />
+                                <!-- Image as a last resort -->
+                                <img src="./../entries/220x130/dining-and-living-cream-220x130.png" title="No video playback capabilities" alt="" />
+                            </object>
+                        </video>
+                    </div>
+                    <h4 class="entry-title"><a href="portfolio-item-self-hosted-video.html">Self-Hosted Video Project</a></h4>
+                    <div class="entry-content">
+                        <p>Self-hosted video project.</p>
+                    </div>
+                </li>
+                <!-- begin row 2 -->
+                <li class="entry">
+                    <div class="entry-image">
+                        <a class="fancybox" href="./../entries/full-size/living-white.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/living-white-220x130.png" alt=""></a>
+                    </div>
+                    <h4 class="entry-title"><a href="portfolio-item-image.html">White Living Room</a></h4>
+                    <div class="entry-content">
+                        <p>Image project with lightbox.</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-image">
+                        <a class="fancybox" data-fancybox-group="gallery-study" href="./../entries/full-size/study.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/study-220x130.png" alt=""></a>
+                        <a class="fancybox invisible" data-fancybox-group="gallery-study" href="./../entries/full-size/dining-white2.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/dining-white2-220x130.png" alt=""></a>
+                        <a class="fancybox invisible" data-fancybox-group="gallery-study" href="./../entries/full-size/dining-brown.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/dining-brown-220x130.png" alt=""></a>
+                    </div>
+                    <h4 class="entry-title"><a href="portfolio-item-image.html">Study</a></h4>
+                    <div class="entry-content">
+                        <p>Gallery project with lightbox.</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-slider">
+                        <ul>
+                            <li><a class="fancybox" data-fancybox-group="gallery-dining-white2" href="./../entries/full-size/dining-white2.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/dining-white2-220x130.png" alt=""></a></li>
+                            <li style="display: none;"><a class="fancybox" data-fancybox-group="gallery-dining-white2" href="./../entries/full-size/dining-brown.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/dining-brown-220x130.png" alt=""></a></li>
+                            <li style="display: none;"><a class="fancybox" data-fancybox-group="gallery-dining-white2" href="./../entries/full-size/dining-white.jpg" title="Project Title"><span class="overlay zoom"></span><img src="./../entries/220x130/dining-white-220x130.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <h4 class="entry-title"><a href="portfolio-item-slider.html">White Dining Room 2</a></h4>
+                    <div class="entry-content">
+                        <p>Gallery project with slider and lightbox.</p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-video">
+                        <iframe src="http://player.vimeo.com/video/11624173?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="220" height="110" allowFullScreen></iframe>
+                    </div>
+                    <h4 class="entry-title"><a href="portfolio-item-embedded-video.html">Arhitectural Film &ndash; Interior</a></h4>
+                    <div class="entry-content">
+                        <p>Embedded video project.</p>
+                    </div>
+                </li>
+            </ul>
+            <!-- end project carousel -->
+        </section>
+        <!-- end selected projects -->
+
+        <!-- begin latest posts -->
+        <section>
+            <h2>Последние записи <span class="more">&ndash; <a href="blog.html">Посмотреть все записи &raquo;</a></span></h2>
+
+            <!-- begin post carousel -->
+            <ul class="post-carousel">
+                <li class="entry">
+                    <div class="entry-image">
+                        <a href="blog-post.html" title="Post Title"><span class="overlay link"></span><img src="./../entries/220x130/living-white-220x130.png" alt=""></a>
+                    </div>
+                    <div class="entry-meta">
+                        <a href="blog-post.html" class="post-format-wrap" title="Permalink to How to Make Innovative Ideas Happen"><span class="post-format standard">Permalink</span></a>
+                        <span>Mar 10, 2012</span>
+                    </div>
+                    <div class="entry-body">
+                        <h4 class="entry-title"><a href="blog-post.html">How to Make Innovative Ideas Happen</a></h4>
+                        <div class="entry-content">
+                            <p>This is a standard post format. Here you can have a standard blog post &hellip;</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-image">
+                        <a href="blog-post.html" title="Post Title"><span class="overlay link"></span><img src="./../entries/220x130/study-220x130.png" alt=""></a>
+                    </div>
+                    <div class="entry-meta">
+                        <a href="blog-post.html" class="post-format-wrap" title="Permalink to Web Development for the iPhone and iPad"><span class="post-format image">Permalink</span></a>
+                        <span>Mar 10, 2012</span>
+                    </div>
+                    <div class="entry-body">
+                        <h4 class="entry-title"><a href="blog-post.html">Web Development for the iPhone and iPad</a></h4>
+                        <div class="entry-content">
+                            <p>This is an image post format. Here you can have an image blog post &hellip;</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-slider">
+                        <ul>
+                            <li><a href="blog-post.html" title="Post Title"><span class="overlay link"></span><img src="./../entries/220x130/dining-white2-220x130.png" alt=""></a></li>
+                            <li style="display: none;"><a href="blog-post.html" title="Post Title"><span class="overlay link"></span><img src="./../entries/220x130/dining-brown-220x130.png" alt=""></a></li>
+                            <li style="display: none;"><a href="blog-post.html" title="Post Title"><span class="overlay link"></span><img src="./../entries/220x130/dining-white-220x130.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="entry-meta">
+                        <a href="blog-post.html" class="post-format-wrap" title="Permalink to Tips for a Finely Crafted Website"><span class="post-format gallery">Permalink</span></a>
+                        <span>Mar 10, 2012</span>
+                    </div>
+                    <div class="entry-body">
+                        <h4 class="entry-title"><a href="blog-post.html">Tips for a Finely Crafted Website</a></h4>
+                        <div class="entry-content">
+                            <p>This is a gallery post format. Here you can have a gallery blog post &hellip;</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-video">
+                        <video width="220" height="130" style="width: 100%; height: 100%;" poster="./../entries/220x130/dining-brown-220x130.png" controls preload="none">
+                            <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+                            <source type="video/mp4" src="media/echo-hereweare.mp4" />
+                            <!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
+                            <source type="video/webm" src="media/echo-hereweare.webm" />
+                            <!-- Ogg/Vorbis for older Firefox and Opera versions -->
+                            <source type="video/ogg" src="media/echo-hereweare.ogv" />
+                            <!-- Optional: Add subtitles for each language -->
+                            <track kind="subtitles" src="media/mediaelement.srt" srclang="en" />
+                            <!-- Optional: Add chapters -->
+                            <track kind="chapters" src="#" srclang="en" />
+                            <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
+                            <object type="application/x-shockwave-flash" data="js/flashmediaelement.swf">
+                                <param name="movie" value="js/flashmediaelement.swf" />
+                                <param name="flashvars" value="controls=true&amp;file=media/echo-hereweare.mp4" />
+                                <!-- Image as a last resort -->
+                                <img src="./../entries/220x130/dining-brown-220x130.png" title="No video playback capabilities" alt="" />
+                            </object>
+                        </video>
+                    </div>
+                    <div class="entry-meta">
+                        <a href="blog-post.html" class="post-format-wrap" title="Permalink to The Elements of the Mobile User Experience"><span class="post-format video">Permalink</span></a>
+                        <span>Mar 10, 2012</span>
+                    </div>
+                    <div class="entry-body">
+                        <h4 class="entry-title"><a href="blog-post.html">The Elements of the Mobile User Experience</a></h4>
+                        <div class="entry-content">
+                            <p>This is a video post format. Here you can have a video blog post &hellip;</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- begin row 2 -->
+                <li class="entry">
+                    <div class="entry-audio">
+                        <audio width="220" style="width: 100%;" src="./AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls preload="none"></audio>
+                    </div>
+                    <div class="entry-meta">
+                        <a href="blog-post.html" class="post-format-wrap" title="Permalink to How To Design A Mobile Game With HTML5"><span class="post-format audio">Permalink</span></a>
+                        <span>Mar 10, 2012</span>
+                    </div>
+                    <div class="entry-body">
+                        <h4 class="entry-title"><a href="blog-post.html">How To Design A Mobile Game With HTML5</a></h4>
+                        <div class="entry-content">
+                            <p>This is an audio post format. Here you can have an audio blog post &hellip;</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-meta">
+                        <a href="blog-post.html" class="post-format-wrap" title="Permalink to Premium Templates and Themes!"><span class="post-format link">Permalink</span></a>
+                        <span>Mar 10, 2012</span>
+                    </div>
+                    <div class="entry-body">
+                        <h4 class="entry-title"><a href="http://themeforest.net/user/ixtendo/portfolio" target="_blank">[Link] Premium Templates and Themes!</a></h4>
+                        <div class="entry-content">
+                            <p>This is a link post format. Here you can have a link blog post &hellip;</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-meta">
+                        <a href="blog-post.html" class="post-format-wrap" title="Permalink to the Quote Post"><span class="post-format quote">Permalink</span></a>
+                        <span>Mar 10, 2012</span>
+                    </div>
+                    <div class="entry-body">
+                        <div class="entry-content">
+                            <blockquote class="simple">
+                                <div class="quote-content">
+                                    <p>This is a quote post format. Here you can have a quote blog post &hellip;</p>
+                                </div>
+                                <div class="quote-meta">&mdash; Quote Author</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div class="entry-meta">
+                        <a href="blog-post.html" class="post-format-wrap" title="Permalink to the Aside Post"><span class="post-format aside">Permalink</span></a>
+                        <span>Mar 10, 2012</span>
+                    </div>
+                    <div class="entry-body">
+                        <div class="entry-content">
+                            <p>This is an aside post format. Here you can have an aside blog post &hellip;</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- end post carousel -->
+        </section>
+        <!-- end latest posts -->
+
+        <!-- begin newsletter -->
+        <section class="one-half">
+            <h2>Подписка на новости</h2>
+            <div id="newsletter-wrap">
+                <p>Subscribe to our email newsletter for useful tips and valuable resources sent out every second Monday.</p>
+                <div class="notification-box notification-box-success" style="display: none;">
+                    <p>You have successfully subscribed to our newsletter. Look for the confirmation email.</p>
+                    <a href="#" class="notification-close notification-close-success">x</a>
+                </div>
+
+                <div class="notification-box notification-box-error" style="display: none;">
+                    <p>Your email address couldn't be subscribed because a server error occurred. Please try again later.</p>
+                    <a href="#" class="notification-close notification-close-error">x</a>
+                </div>
+                <form id="newsletter-form" class="content-form clearfix" action="#" method="post">
+                    <input id="subscribe" class="button" type="submit" name="subscribe" value="Subscribe">
+                    <input id="newsletter" type="email" name="newsletter" placeholder="Enter your email address here &hellip;" class="required">
+                </form>
+                <p class="tip"><span class="note">&#42;</span> Check your spam folder if the mail does not arrive.</p>
+            </div>
+        </section>
+        <!-- end newsletter -->
+        
+        <!-- begin testimonials -->
+        <section class="one-half column-last">
+            <h2>Отзывы <span class="more">&ndash; <a href="testimonials.html">Просмотреть все отзывы &raquo;</a></span></h2> 
+            
+            <!-- begin testimonial carousel -->
+            <ul class="testimonial-carousel">
+                <li>
+                    <blockquote class="speech-bubble">
+                        <div class="quote-content">
+                            <p>Great theme! Very intuitive, clean code, very well-organized documentation &ndash; I would highly recommend getting this theme; it’s ideal for further customization!</p>
+                            <span class="quote-arrow"></span>
+                        </div>
+                        <div class="quote-meta">Harry Jones, Web Designer<br>
+                            <span class="grey-text">CreativeBrains</span>
+                        </div>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote class="speech-bubble">
+                        <div class="quote-content">
+                            <p>I would rate the template 5 out of 5 and here's why: it has a clean and straightforward look that will work for a variety of target audiences, which is important when you build for ROI.</p>
+                            <span class="quote-arrow"></span>
+                        </div>
+                        <div class="quote-meta">Andrew Williams, Art Director<br>
+                            <span class="grey-text">SmartBiz</span>
+                        </div>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote class="speech-bubble">
+                        <div class="quote-content">
+                            <p>The template is really intuitive to customize and, the few instances where I needed help, you were right there to assist, in a timely manner, I might add. Well done, keep up the great work!</p>
+                            <span class="quote-arrow"></span>
+                        </div>
+                        <div class="quote-meta">Larry Thompson, Web Developer<br>
+                            <span class="grey-text">BitVenture</span>
+                        </div>
+                    </blockquote>
+                </li>
+            </ul>
+            <!-- end testimonial carousel -->
+        </section>
+        <!-- end testimonials -->
+    </section>
+    <!-- end content -->      
+    
+	<!-- begin footer -->
+	<footer id="footer">
+    	<div class="container">
+            <!-- begin footer top -->
+            <div id="footer-top">
+                <div class="one-fourth">
+                	<div class="widget">
+                        <h3>О компании</h3>
+                        <p>Строительная компания "Рубин" — является динамично развивающейся строительной компанией Самары и Самарской области, выполняющей полный спектр строительных работ.</p>
+                        <p>Наша компания имеет большой опыт работы как с физическими лицами так и с муниципальными предприятиями города Самара.</p>
+                    </div>
+                </div>
+                <div class="one-fourth">
+                	<div class="widget latest-posts">
+                        <h3>Последние сообщения</h3>
+                        <ul>
+                            <li>
+                                <a href="blog-post.html">How to Make Innovative Ideas Happen</a>
+                                <span>March 10, 2012</span>
+                            </li>
+                            <li> 
+                            	<a href="blog-post.html">Web Development for the iPhone and iPad</a>
+                                <span>March 10, 2012</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="one-fourth">
+                	<div class="widget twitter-widget">
+                    	<h3>Последние твиты</h3>
+                        <div class="tweet"></div>
+                    </div>
+                </div>
+                <div class="one-fourth column-last">
+                	<div class="widget contact-info">
+                    	<h3>Контакты</h3>
+                        <p class="address"><strong>Адрес:</strong> 443066, г. Самара, <br/>
+                        ул. Советской Армии, 93, офис 9</p>
+                        <p class="phone"><strong>Телефон:</strong> +7 (846) 205-60-88</p>
+                        <p class="email"><strong>Email:</strong> <a href="mailto:sales@ckrubin.ru">sales@ckrubin.ru</a></p>
+                        <div class="social-links">
+                        	<h4>Следите за нами</h4>
+                            <ul>
+                            	<li class="twitter"><a href="#" title="Twitter" target="_blank">Twitter</a></li>
+                                <li class="facebook"><a href="#" title="Facebook" target="_blank">Facebook</a></li>
+                                <li class="google"><a href="#" title="Google+" target="_blank">Google+</a></li>
+                                <li class="instagramm"><a href="#" title="Instagramm" target="_blank">Instagramm</a></li>
+                                <li class="vk"><a href="#" title="В контакте" target="_blank">В контакте</a></li>
+                                <li class="ok"><a href="#" title="Одноклассники" target="_blank">Одноклассники</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end footer top -->
+
+            <!-- begin footer bottom -->
+            <div id="footer-bottom">
+            	<div class="center">
+                	<p>Все права защищены &copy; 2015 СК "Рубин"</p>
+                </div>
+            </div>
+            <!-- end footer bottom -->
+        </div>
+	</footer>
+	<!-- end footer -->
+</div>
+<!-- end container -->
+</body>
+</html>
