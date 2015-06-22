@@ -40,7 +40,7 @@ production:
 
   adapter: postgresql
   encoding: unicode
-  database: finesse_production
+  database: d899plcd9i0p4
   pool: 5
-  username: root
-  password:
+  username: lozvjgkbgthpdr
+  password: T0Jx2OliWmiulvFThci_UbBd41
