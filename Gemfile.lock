@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/typus/typus.git
+  revision: d48c7dcf1b3da046f69d4fe06b6b0025ad907ce1
+  branch: 4-0-stable
+  specs:
+    typus (4.0.0.beta1)
+      bcrypt-ruby (~> 3.0.1)
+      jquery-rails
+      rails (~> 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -26,6 +36,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    bcrypt-ruby (3.0.1)
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -122,4 +133,5 @@ DEPENDENCIES
   sdoc
   sprockets-rails
   turbolinks
+  typus!
   uglifier (>= 1.3.0)

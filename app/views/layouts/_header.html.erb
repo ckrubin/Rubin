@@ -1,0 +1,107 @@
+<head>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+<!--[if IE 8]> <html class="ie8 no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+	<!-- begin meta -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=10">
+	<meta name="description" content="Finesse is a responsive business and portfolio theme carefully handcrafted using the latest technologies. It features a clean design, as well as extended functionality that will come in very handy.">
+	<meta name="keywords" content="Finesse, responsive business portfolio theme, HTML5, CSS3, clean design">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- end meta -->
+
+    <!-- begin CSS -->
+    <%= stylesheet_link_tag "color.css" %>
+    <!-- end CSS -->
+
+    <script type='text/javascript'>
+    jQuery(function($){
+        $(".tweet").tweet({
+            join_text: "auto",
+            avatar_size: 32,
+            count: 3,
+            loading_text: "loading tweets..."
+        });
+    });
+</script>
+	
+</head>
+
+
+<body>
+
+<div id="wrap">
+	<!-- begin header -->
+    <header id="header" class="container">
+        <!-- begin header top -->
+        <section id="header-top" class="clearfix">
+            <!-- begin header left -->
+            <div class="one-half">
+                <h1 id="logo"><a href="index.html"><%=image_tag "logo.png"%></a></h1>
+            </div>
+            <!-- end header left -->
+            
+            <!-- begin header right -->
+            <div class="one-half column-last">
+                <!-- begin contact info -->
+                <div class="contact-info">
+                    <p class="phone">(846) 205-60-88</p>
+                    <p class="email"><a href="mailto:sales@ckrubin.ru">sales@ckrubin.ru</a></p>
+                </div>
+                <!-- end contact info -->
+            </div>
+            <!-- end header right -->
+        </section>
+        <!-- end header top -->
+        
+        <!-- begin navigation bar -->
+        <section id="navbar" class="clearfix">
+            <!-- begin navigation -->
+            <nav id="nav">
+                <ul id="navlist" class="clearfix">
+                    <li><%= link_to "ГЛАВНАЯ", "/" %></li>
+
+                    <li><a href=".зфпуы.фищге">О КОМПАНИИ</a></li>
+
+                    <li><a href="elements.html" data-rel="submenu1">УСЛУГИ</a>
+                        <ul id="submenu1" class="ddsubmenustyle">
+                            <li><a href="elements.html">Благоустройство</a></li>
+                                <ul id="submenu2" class="ddsubmenustyle">
+                                    <li><a href="elements.html">Асфальтирование</a></li>
+                                    <li><a href="elements.html">Озеленение</a></li>
+                                </ul>
+                            <li><a href="grid-columns.html">Кровельные работы</a></li>
+                            <li><a href="pricing-tables.html">Металлоконструкции</a></li>
+                            <li><a href="images.html">Заборы</a></li>
+                            <li><a href="video.html">Отделочные работы</a></li>
+                            <li><a href="video.html">Малоэтажное строительство</a></li>
+                            <li><a href="video.html">Отопление</a></li>
+                            <li><a href="video.html">Водоснабжение</a></li>
+                            <li><a href="video.html">Канализация</a></li>
+                            <li><a href="video.html">Электромонтажные работы</a></li>
+                            <li><a href="video.html">Бассейны</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="portfolio.html" data-rel="submenu2">ВЫПОЛНЕННЫЕ РАБОТЫ</a></li>
+
+                    <li><%= link_to "КОНТАКТЫ", "pages/contact" %></li>
+
+                </ul>
+            </nav>
+            <!-- end navigation -->
+            
+            <!-- begin search form -->
+            <form id="search-form" action="search" method="get">
+                <input id="s" type="text" name="s" placeholder="Search &hellip;" style="display: none;">
+                <input id="search-submit" type="submit" name="search-submit" value="Search">
+            </form>
+            <!-- end search form -->
+        </section>
+        <!-- end navigation bar -->
+        
+    </header>
+    <!-- end header -->

@@ -1,2 +1,98 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<section id="content" class="container clearfix">
+  <section>
+  
+  </style>
+  <style type="text/css">
+      #map-canvas {
+        width: 940px;
+        height: 350px;
+      }
+    </style>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(53.2059787, 50.2139744);
+  var mapOptions = {
+    zoom:     17,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'ООО СК «Рубин»'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+<div id="map-canvas"></div>
+
+            </section>
+            <!-- end google map -->
+            
+            <!-- begin main -->
+            <section id="main" class="three-fourths">
+            <!-- begin contact form -->
+            <h2>Связаться с нами</h2>
+            <p></p>
+            <div id="contact-notification-box-success" class="notification-box notification-box-success" style="display: none;">
+                <p>Ваше сообщение было успешно отправлено.</p>
+                <a href="#" class="notification-close notification-close-success">x</a>
+            </div>
+
+                <div id="contact-notification-box-error" class="notification-box notification-box-error " style="display: none;">
+                    <p id="contact-notification-box-error-msg" data-default-msg="Ваше сообщение не может быть отправлено. Пожалуйста повторите позднее."></p>
+                    <a href="#" class="notification-close notification-close-error">x</a>
+                </div>
+            <form id="contact-form" class="content-form" method="post" action="#">
+                <p>
+                    <label for="name">Имя:<span class="note">*</span></label>
+                    <input id="name" type="text" name="name" class="required">
+                </p>
+                <p>
+                    <label for="email">Email:<span class="note">*</span></label>
+                    <input id="email" type="email" name="email" class="required">
+                </p>
+                <p>
+                    <label for="subject">Тема:<span class="note">*</span></label>
+                    <input id="subject" type="text" name="subject" class="required">
+                </p>
+                <p>
+                    <label for="message">Сообщение:<span class="note">*</span></label>
+                    <textarea id="message" cols="68" rows="8" name="message" class="required"></textarea>
+                </p>
+                <p>
+                    <input id="submit" class="button" type="submit" name="submit" value="Отправить">
+                </p>
+            </form>
+            <p><span class="note">*</span> Поля, обязательные для заполнения</p>
+            <!-- end contact form -->
+
+            </section>
+            <!-- end main -->
+            <!-- begin sidebar -->
+            <aside id="sidebar" class="one-fourth column-last">
+            	<div class="widget contact-info">
+                    <h3>Контакты</h3>
+                    <p class="address"><strong>Адрес:</strong> 443066, г. Самара, <br/> ул. Советской Армии, 93, офис 9</p>
+                    <p class="phone"><strong>Телефон:</strong> +7 (846) 205-60-88</p>
+                    <p class="email"><strong>Email:</strong> <a href="mailto:sales@ckrubin.ru">sales@ckrubin.ru</a></p>
+                    <p class="business-hours"><strong>Часы работы:</strong><br>
+                    Понедельник-Пятница: 9:00-18:00<br>
+                    Суббота: 10:00-17:00<br>
+                    Воскресенье: Выходной
+                    </p>
+                </div>
+            </aside>
+            <!-- end sidebar -->
+            
+            <!-- end main content -->
+        </section>
+        <!-- end content -->             
+ 
+</body>
+</html>

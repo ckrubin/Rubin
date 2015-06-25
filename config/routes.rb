@@ -1,7 +1,11 @@
 Finesse::Application.routes.draw do
+#  get "testimotionals/index"
   root to: "pages#index"
   get "pages/index"
   get "pages/contact"
+  get "pages/price"
+  get "pages/about"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
