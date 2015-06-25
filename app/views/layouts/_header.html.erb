@@ -62,9 +62,9 @@
             <!-- begin navigation -->
             <nav id="nav">
                 <ul id="navlist" class="clearfix">
-                    <li><%= link_to "ГЛАВНАЯ", "/" %></li>
+                    <li><%= link_to "ГЛАВНАЯ", pages_index_path %></li>
 
-                    <li><a href=".зфпуы.фищге">О КОМПАНИИ</a></li>
+                    <li><%= link_to "О КОМПАНИИ", pages_about_path %></li>
 
                     <li><a href="elements.html" data-rel="submenu1">УСЛУГИ</a>
                         <ul id="submenu1" class="ddsubmenustyle">
@@ -88,7 +88,7 @@
 
                     <li><a href="portfolio.html" data-rel="submenu2">ВЫПОЛНЕННЫЕ РАБОТЫ</a></li>
 
-                    <li><%= link_to "КОНТАКТЫ", "pages/contact" %></li>
+                    <li><%= link_to "КОНТАКТЫ", pages_contact_path %></li>
 
                 </ul>
             </nav>

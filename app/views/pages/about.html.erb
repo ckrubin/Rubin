@@ -20,8 +20,8 @@
         <!-- begin team -->
         <section>
             <h2>Наша команда</h2>
-            <div class="team-member one-fourth">
-                <img class="photo" src="images/demo/team-member.png" alt="Team Member">
+            <div class="team-member one-third">
+                <%=image_tag "team-member.png", class:"photo", alt:"Team Member" %>
                 <div class="content">
                     <h3 class="name">John Doe</h3>
                     <span class="job-title">Director and Founder</span>
@@ -36,9 +36,8 @@
                     <li class="email"><a href="#" title="Email" target="_blank">Email</a></li>
                 </ul>
             </div>
-            
-            <div class="team-member one-fourth">
-                <img class="photo" src="images/demo/team-member.png" alt="Team Member">
+            <div class="team-member one-third">
+                <%=image_tag "team-member.png", class:"photo", alt:"Team Member" %>
                 <div class="content">
                     <h3 class="name">Jane Doe</h3>
                     <span class="job-title">Web Designer</span>
@@ -53,9 +52,8 @@
                     <li class="email"><a href="#" title="Email" target="_blank">Email</a></li>
                 </ul>
             </div>
-            
-            <div class="team-member one-fourth">
-                <img class="photo" src="images/demo/team-member.png" alt="Team Member">
+            <div class="team-member one-third">
+                <%=image_tag "team-member.png", class:"photo", alt:"Team Member" %>
                 <div class="content">
                     <h3 class="name">John Doe</h3>
                     <span class="job-title">Web Developer</span>
@@ -70,6 +68,7 @@
                     <li class="email"><a href="#" title="Email" target="_blank">Email</a></li>
                 </ul>
             </div>
+
             <div class="clear"></div>
         </section>
         <!-- end team -->
@@ -78,17 +77,18 @@
         <section>
             <h2>Наши клиенты</h2>
             <ul class="clients clearfix">
-                <li><a href="#"><img src="images/client-logos/themeforest.png" alt="ThemeForest" title="ThemeForest"></a></li>
-                <li><a href="#"><img src="images/client-logos/photodune.png" alt="PhotoDune" title="PhotoDune"></a></li>
-                <li><a href="#"><img src="images/client-logos/audiojungle.png" alt="AudioJungle" title="AudioJungle"></a></li>
-                <li><a href="#"><img src="images/client-logos/codecanyon.png" alt="CodeCanyon" title="CodeCanyon"></a></li>
-                <li><a href="#"><img src="images/client-logos/graphicriver.png" alt="GraphicRiver" title="GraphicRiver"></a></li>
-                
-                <li><a href="#"><img src="images/client-logos/graphicriver.png" alt="GraphicRiver" title="GraphicRiver"></a></li>
-                <li><a href="#"><img src="images/client-logos/audiojungle.png" alt="AudioJungle" title="AudioJungle"></a></li>
-                <li><a href="#"><img src="images/client-logos/codecanyon.png" alt="CodeCanyon" title="CodeCanyon"></a></li>
-                <li><a href="#"><img src="images/client-logos/photodune.png" alt="PhotoDune" title="PhotoDune"></a></li>
-                <li><a href="#"><img src="images/client-logos/themeforest.png" alt="ThemeForest" title="ThemeForest"></a></li>
+                <li><%=image_tag "themeforest.png", alt:"ThemeForest" %></li>
+                <li><%=image_tag "photodune.png", alt:"PhotoDune" %></li>
+                <li><%=image_tag "audiojungle.png", alt:"AudioJungle" %></li>
+                <li><%=image_tag "codecanyon.png", alt:"CodeCanyon" %></li>
+                <li><%=image_tag "graphicriver.png", alt:"GraphicRiver" %></li>
+
+                <li><%=image_tag "graphicriver.png", alt:"GraphicRiver" %></li>
+                <li><%=image_tag "audiojungle.png", alt:"AudioJungle" %></li>
+                <li><%=image_tag "codecanyon.png", alt:"CodeCanyon" %></li>
+                <li><%=image_tag "photodune.png", alt:"PhotoDune" %></li>
+                <li><%=image_tag "themeforest.png", alt:"ThemeForest" %></li>
+
             </ul>
         </section>
         <!-- end clients -->
