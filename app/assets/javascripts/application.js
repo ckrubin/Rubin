@@ -19,7 +19,6 @@
 //= require modernizr.custom
 //= require respond.min
 //= require jquery.polyglot.language.switcher
-//= require jquery.gmap.min
 //= require tinynav.min
 //= require jquery.validate.min
 //= require jquery.flexslider-min

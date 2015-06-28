@@ -16,17 +16,6 @@
     <!-- begin CSS -->
     <%= stylesheet_link_tag "color.css" %>
     <!-- end CSS -->
-
-    <script type='text/javascript'>
-    jQuery(function($){
-        $(".tweet").tweet({
-            join_text: "auto",
-            avatar_size: 32,
-            count: 3,
-            loading_text: "loading tweets..."
-        });
-    });
-</script>
 	
 </head>
 
@@ -40,7 +29,9 @@
         <section id="header-top" class="clearfix">
             <!-- begin header left -->
             <div class="one-half">
-                <h1 id="logo"><a href="index.html"><%=image_tag "logo.png"%></a></h1>
+
+
+                <h1 id="logo"><%= link_to image_tag("logo.png", :alt => "СК Рубин"), pages_index_path, :method => :get %></h1>
             </div>
             <!-- end header left -->
             
@@ -62,17 +53,12 @@
             <!-- begin navigation -->
             <nav id="nav">
                 <ul id="navlist" class="clearfix">
-                    <li><%= link_to "ГЛАВНАЯ", pages_index_path %></li>
 
-                    <li><%= link_to "О КОМПАНИИ", pages_about_path %></li>
+                    <li><%= link_to "О НАС", pages_about_url, :method => :get %></li>
 
                     <li><a href="elements.html" data-rel="submenu1">УСЛУГИ</a>
                         <ul id="submenu1" class="ddsubmenustyle">
                             <li><a href="elements.html">Благоустройство</a></li>
-                                <ul id="submenu2" class="ddsubmenustyle">
-                                    <li><a href="elements.html">Асфальтирование</a></li>
-                                    <li><a href="elements.html">Озеленение</a></li>
-                                </ul>
                             <li><a href="grid-columns.html">Кровельные работы</a></li>
                             <li><a href="pricing-tables.html">Металлоконструкции</a></li>
                             <li><a href="images.html">Заборы</a></li>
@@ -86,9 +72,11 @@
                         </ul>
                     </li>
 
-                    <li><a href="portfolio.html" data-rel="submenu2">ВЫПОЛНЕННЫЕ РАБОТЫ</a></li>
+                    <li><%= link_to "ВЫПОЛНЕННЫЕ РАБОТЫ", pages_images_url, :method => :get %></li>
 
-                    <li><%= link_to "КОНТАКТЫ", pages_contact_path %></li>
+                    <li><%= link_to "ЦЕНЫ", pages_price_url, :method => :get %></li>
+
+                    <li><%= link_to "КОНТАКТЫ", pages_contact_url, :method => :get %></li>
 
                 </ul>
             </nav>

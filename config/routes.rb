@@ -4,6 +4,7 @@ Finesse::Application.routes.draw do
   get "pages/index"
   get "pages/contact"
   get "pages/price"
+  get "pages/images"
   get "pages/about"
 
   # The priority is based upon order of creation: first created -> highest priority.
