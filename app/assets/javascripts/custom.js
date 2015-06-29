@@ -1290,20 +1290,20 @@ jQuery(document).ready(function ($) {
             try {
                 var wrapper = $(this);
                 var settings = {
-                    username: "YOUR TWITTER USERNAME", // Change username here
+                    username: "OooCKRubin", // Change username here
                     twitter_api_url: apiUrl,
                     join_text: false,
                     avatar_size: false, // you can activate the avatar
                     count: 2, // number of tweets
-                    view_text: "view tweet on twitter",
-                    just_now_text: "just now",
-                    seconds_ago_text: "about %d seconds ago",
-                    a_minutes_ago_text: "about a minute ago",
-                    minutes_ago_text: "about %d minutes ago",
-                    a_hours_ago_text: "about an hour ago",
-                    hours_ago_text: "about %d hours ago",
-                    a_day_ago_text: "about a day ago",
-                    days_ago_text: "about %d days ago",
+                    view_text: "смотреть на twitter.com",
+                    just_now_text: "сейчас",
+                    seconds_ago_text: "%d секунд назад",
+                    a_minutes_ago_text: "минуту назад",
+                    minutes_ago_text: "%d минут назад",
+                    a_hours_ago_text: "час назад",
+                    hours_ago_text: "%d часов назад",
+                    a_day_ago_text: "вчера",
+                    days_ago_text: "%d дней назад",
                     template: "{avatar}{text}{join}{time}" // [string or function] template used to construct each tweet <li> - see code for available vars
                 };
 
