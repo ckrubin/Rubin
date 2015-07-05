@@ -20,11 +20,4 @@ ActiveRecord::Schema.define(version: 20150704102106) do
     t.datetime "updated_at"
   end
 
-  create_table "testimotionals", force: true do |t|
-    t.text     "testimotion"
-    t.string   "author"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end
