@@ -1,6 +1,9 @@
 Finesse::Application.routes.draw do
 #  get "testimotionals/index"
-  root to: "pages#index"
+  resources :articles
+
+  root "pages#index"
+
   get "pages/index"
   get "pages/contact"
   get "pages/price"

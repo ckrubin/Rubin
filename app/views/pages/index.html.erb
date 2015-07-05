@@ -99,7 +99,8 @@
         
         <!-- begin services -->
         <section>
-            <h2>Наши услуги <span class="more">&ndash; <a href="#">Посмотреть все услуги &raquo;</a></span></h2> 
+            <h2>Наши услуги <span class="more">&ndash; <%= link_to "Посмотреть все услуги", pages_images_url, :method => :get %></span></h2> 
+
             
             <!-- begin iconbox carousel -->
             <ul class="iconbox-carousel">
@@ -158,7 +159,7 @@
 
         <!-- begin selected projects -->
         <section>
-            <h2>Последние проекты <span class="more">&ndash; <a href="#">Посмотреть все проекты &raquo;</a></span></h2>
+            <h2>Последние проекты <span class="more">&ndash; <%= link_to "Посмотреть все проекты", pages_images_url, :method => :get %></span></h2>
 
             <!-- begin project carousel -->
             <ul class="project-carousel">
