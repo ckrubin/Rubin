@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @testimonial.comment %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @testimonial.author %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @testimonial.company %>
+</p>
+
+<%= link_to 'Edit', edit_testimonial_path(@testimonial) %> |
+<%= link_to 'Back', testimonials_path %>

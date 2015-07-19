@@ -1,7 +1,4 @@
-   
-    <!-- begin content -->
     <section id="content" class="container clearfix">
-        <!-- begin slider -->
         <section id="slider-home">
             <div class="flex-container">
                 <div class="flexslider">
@@ -80,9 +77,7 @@
                 </div>
             </div>
         </section>
-        <!-- end slider -->
         
-        <!-- begin infobox -->
         <section>
             <div class="infobox">
                 <div class="infobox-inner">
@@ -95,14 +90,11 @@
                 </div>
             </div>
         </section>
-        <!-- end infobox -->
         
-        <!-- begin services -->
         <section>
             <h2>Наши услуги <span class="more">&ndash; <%= link_to "Посмотреть все услуги", pages_images_url, :method => :get %></span></h2> 
 
             
-            <!-- begin iconbox carousel -->
             <ul class="iconbox-carousel">
                 <li>
                     <div class="iconbox computer">
@@ -153,15 +145,11 @@
                     </div>
                 </li>
             </ul>
-            <!-- end iconbox carousel -->
         </section>
-        <!-- end services -->
 
-        <!-- begin selected projects -->
         <section>
             <h2>Последние проекты <span class="more">&ndash; <%= link_to "Посмотреть все проекты", pages_images_url, :method => :get %></span></h2>
 
-            <!-- begin project carousel -->
             <ul class="project-carousel">
 
                 <li class="entry">
@@ -215,7 +203,7 @@
                     </div>
                 </li>
 
-                <!-- begin row 2 -->
+
                 
                 <li class="entry">
                     <div class="entry-image">
@@ -268,11 +256,8 @@
                     </div>
                 </li>
             </ul>
-            <!-- end project carousel -->
         </section>
-        <!-- end selected projects -->
 
-        <!-- begin newsletter -->
         <section class="one-half">
             <h2>Подписаться на новости</h2>
             <div id="newsletter-wrap">
@@ -293,55 +278,27 @@
                 <p class="tip"><span class="note">&#42;</span>Если письмо не приходит, проверьте папку спам в Вашем почтовом ящике.</p>
             </div>
         </section>
-        <!-- end newsletter -->
 
-        <!-- begin testimonials -->
         <section class="one-half column-last">
-            <h2>Отзывы <span class="more">&ndash; <a href="#">Просмотреть все отзывы &raquo;</a></span></h2> 
-            
-            <!-- begin testimonial carousel -->
+            <h2>Отзывы <span class="more">&ndash;<a href="#">Просмотреть все отзывы &raquo;</a></span></h2>
             <ul class="testimonial-carousel">
-                <li>
+            <% @testimonials.each do |testimonial| %>
+              <li>
                     <blockquote class="speech-bubble">
-                        <div class="quote-content">
-                            <p>Работы были выполнены в соответствии с действующими строительными нормами и правилами, согласно техническому заданию, с надлежащим качеством и в установленный срок.</p>
-                            <span class="quote-arrow"></span>
-                        </div>
-                        <div class="quote-meta">Климова К.Н., ООО «ИЛТ Инвестмент»<br>
-                        </div>
+                            <div class="quote-content">
+                                <p><%=testimonial.comment%></p>
+                                <span class="quote-arrow"></span>
+                            </div>
+                            <div class="quote-meta">
+                                <p><%=testimonial.author%></p>
+                            </div>
                     </blockquote>
-                </li>
-
-                <li>
-                    <blockquote class="speech-bubble">
-                        <div class="quote-content">
-                            <p>Благодарим строительную компанию «Рубин» за конструктивное сотрудничество, оперативность принимаемых решений и профессионализм.</p>
-                            <span class="quote-arrow"></span>
-                        </div>
-                        <div class="quote-meta">Котерева Э.А. АО «Гриндекс»<br>
-                        </div>
-                    </blockquote>
-                </li>
-
-                <li>
-                    <blockquote class="speech-bubble">
-                        <div class="quote-content">
-                            <p> В настоящее время строительная компания «Рубин» является одним из основных подрядчиков ОАО «Криогенмаш» и полностью удовлетворяет требованиям заказчика.
-
-                            Рекомендуем Строительную Компанию «Афина» как профессионального и надёжного делового партнёра и надеемся на дальнейшее сотрудничество.</p>
-                            <span class="quote-arrow"></span>
-                        </div>
-                        <div class="quote-meta">Лихман В.В., ОАО «Криогенмаш»<br>
-                        </div>
-                    </blockquote>
-                </li>
+              </li>
+            <% end %>
             </ul>
-            <!-- end testimonial carousel -->
-
         </section>
-        <!-- end testimonials -->
+            
 
-        <!-- begin partner logo -->
         <section>
             <h2>Наши клиенты</h2>
             <ul class="iconbox-carousel">
@@ -352,8 +309,4 @@
                 <li><%=image_tag "graphicriver.png", alt:"GraphicRiver" %></li>
             </ul>
         </section>
-
-        <!-- end partner logo -->
-
     </section>
-    <!-- end content -->

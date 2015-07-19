@@ -31,8 +31,11 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'rails_12factor', group: :production
 
+# Paperclip is intended as an easy file attachment library for Active Record.
+gem "paperclip", "~> 4.3"
+
 # Typus is a control panel for Ruby on Rails applications to allow trusted users edit structured content.
-gem "typus", github: "typus/typus", branch: "4-0-stable"
+# gem "typus", github: "typus/typus", branch: "4-0-stable"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

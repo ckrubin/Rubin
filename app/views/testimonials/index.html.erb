@@ -1,0 +1,29 @@
+<h1>Listing testimonials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Comment</th>
+      <th>Author</th>
+      <th>Company</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @testimonials.each do |testimonial| %>
+      <tr>
+        <td><%= testimonial.comment %></td>
+        <td><%= testimonial.author %></td>
+        <td><%= testimonial.company %></td>
+        <td><%= link_to 'Show', testimonial %></td>
+        <td><%= link_to 'Edit', edit_testimonial_path(testimonial) %></td>
+        <td><%= link_to 'Destroy', testimonial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

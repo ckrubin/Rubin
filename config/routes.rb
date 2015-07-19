@@ -1,6 +1,11 @@
 Finesse::Application.routes.draw do
+  resources :works
+
+  resources :testimonials
+
 #  get "testimotionals/index"
   resources :articles
+#  get "articles/index"
 
   root "pages#index"
 
@@ -9,6 +14,19 @@ Finesse::Application.routes.draw do
   get "pages/price"
   get "pages/images"
   get "pages/about"
+  get "pages/beautyfication"
+  get "pages/roofing"
+  get "pages/metall"
+  get "pages/fence"
+  get "pages/finishing"
+  get "pages/building"
+  get "pages/heating"
+  get "pages/water_supply"
+  get "pages/sewerage"
+  get "pages/electrician"
+  get "pages/pools"
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -11,13 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150704102106) do
+ActiveRecord::Schema.define(version: 20150719100251) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
     t.text     "text"
+    t.string   "image_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "testimonials", force: true do |t|
+    t.text     "comment"
+    t.string   "author"
+    t.string   "company"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "works", force: true do |t|
+    t.string   "title"
+    t.text     "text"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
 end

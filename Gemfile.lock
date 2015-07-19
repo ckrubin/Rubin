@@ -1,13 +1,3 @@
-GIT
-  remote: git://github.com/typus/typus.git
-  revision: d48c7dcf1b3da046f69d4fe06b6b0025ad907ce1
-  branch: 4-0-stable
-  specs:
-    typus (4.0.0.beta1)
-      bcrypt-ruby (~> 3.0.1)
-      jquery-rails
-      rails (~> 4.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,8 +26,11 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
-    bcrypt-ruby (3.0.1)
     builder (3.1.4)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.7)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -60,8 +53,15 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mimemagic (0.3.0)
     minitest (4.7.5)
-    multi_json (1.11.1)
+    multi_json (1.11.2)
+    paperclip (4.3.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (= 0.3.0)
     pg (0.18.2)
     polyglot (0.3.5)
     rack (1.5.5)
@@ -97,7 +97,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    sprockets (2.12.3)
+    sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -126,6 +126,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  paperclip (~> 4.3)
   pg
   rails (= 4.0.0)
   rails_12factor
@@ -133,5 +134,4 @@ DEPENDENCIES
   sdoc
   sprockets-rails
   turbolinks
-  typus!
   uglifier (>= 1.3.0)
