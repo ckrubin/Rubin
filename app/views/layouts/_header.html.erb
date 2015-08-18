@@ -3,6 +3,8 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 
+
+
 <!--[if IE 8]> <html class="ie8 no-js"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
 	<!-- begin meta -->
@@ -31,7 +33,7 @@
             <div class="one-half">
 
 
-                <h1 id="logo"><%= link_to image_tag("logo.png", :alt => "СК Рубин"), pages_index_path, :method => :get %></h1>
+                <h1 id="logo"><%= link_to image_tag("logo.png", :alt => "СК Рубин"), root_path, :method => :get %></h1>
             </div>
             <!-- end header left -->
             
@@ -54,9 +56,9 @@
             <nav id="nav">
                 <ul id="navlist" class="clearfix">
 
-                    <li><%= link_to "О НАС", pages_about_url, :method => :get %></li>
+                    <li><%= link_to "О НАС", pages_about_url %></li>
 
-                    <li><a href="#" data-rel="submenu1">УСЛУГИ</a>
+                    <li><a data-rel="submenu1">УСЛУГИ</a>
                         <ul id="submenu1" class="ddsubmenustyle">
                             <li><%= link_to "Благоустройство", pages_beautyfication_url %></li>
                             <li><%= link_to "Кровельные работы", pages_roofing_url %></li>
@@ -69,11 +71,11 @@
                         </ul>
                     </li>
 
-                    <li><%= link_to "ВЫПОЛНЕННЫЕ РАБОТЫ", pages_images_url, :method => :get %></li>
+                    <li><%= link_to "ВЫПОЛНЕННЫЕ РАБОТЫ", pages_images_url %></li>
 
-                    <li><%= link_to "ЦЕНЫ", pages_price_url, :method => :get %></li>
+                    <li><%= link_to "ЦЕНЫ", pages_price_url %></li>
 
-                    <li><%= link_to "КОНТАКТЫ", pages_contact_url, :method => :get %></li>
+                    <li><%= link_to "КОНТАКТЫ", pages_contact_url %></li>
 
                 </ul>
             </nav>

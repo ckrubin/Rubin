@@ -9,7 +9,6 @@ Finesse::Application.routes.draw do
 
   root "pages#index"
 
-  get "pages/index"
   get "pages/contact"
   get "pages/price"
   get "pages/images"

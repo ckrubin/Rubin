@@ -10,9 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery.turbolinks
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery-1.11.1.min
 //= require ie
 //= require jquery.easing.1.3
