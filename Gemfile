@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'rails_12factor', group: :production
 
+gem 'puma'
+
 # Paperclip is intended as an easy file attachment library for Active Record.
 gem "paperclip", "~> 4.3"
 
