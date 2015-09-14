@@ -777,7 +777,7 @@ h2 span.more a {
 	border-top: 1px solid #e5e5e5;
 }
 
-.jcarousel-list li { height: 350px; width: 940px; } 
+.jcarousel-list li { width: 940px; } 
 
 .jcarousel-clip {
 	overflow: hidden;
