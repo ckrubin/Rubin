@@ -23,7 +23,7 @@ Author URI: http://www.ixtendo.com
 
 @import url('./html5-reset.css');
 
-@import url('./polyglot-language-switcher.css');
+/*@import url('./polyglot-language-switcher.css');*/
 @import url('./flexslider.css');
 @import url('./jquery.fancybox.css');
 @import url('./mediaelementplayer.css');
@@ -821,7 +821,7 @@ h2 span.more a {
 
 /* ---------------------------------------------------------------------- */
 /* Portfolio & Blog
-/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */f
 .entry-image,
 .entry-video,
 .entry-audio,
