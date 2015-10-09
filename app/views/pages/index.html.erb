@@ -181,8 +181,8 @@
                     <a href="#" class="notification-close notification-close-error">x</a>
                 </div>
                 <form id="newsletter-form" class="content-form clearfix" action="#" method="post">
-                    <input id="subscribe" class="button" type="submit" name="subscribe" value="Subscribe">
-                    <%= button_to "Добавить", testmailer_controller_message_path, :method => :get, :class => 'button large' %>
+                    
+                    <%= button_to "Добавить", testmailer_controller_message_path, :method => :get, :class => 'button' %>
                     <input id="newsletter" type="email" name="newsletter" placeholder="Введите свой e-mail адрес &hellip;" class="required">
                 </form>
                 <p class="tip"><span class="note">&#42;</span>Если письмо не приходит, проверьте папку спам в Вашем почтовом ящике.</p>
