@@ -1,7 +1,7 @@
 # Send the email
 class TestMailer < ActionMailer::Base
 
-  def message, :metohd => :GET
+  def message
     mail(
       :subject => 'Hello from Postmark',
       :to  => '8877024@gmail.com',
