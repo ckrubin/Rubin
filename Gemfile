@@ -33,6 +33,9 @@ gem 'rails_12factor', group: :production
 
 gem 'puma'
 
+# Send an email with the Postmark Rails Gem 
+gem 'postmark-rails'
+
 # Paperclip is intended as an easy file attachment library for Active Record.
 gem "paperclip", "~> 4.3"
 

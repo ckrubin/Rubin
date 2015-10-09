@@ -82,4 +82,5 @@ Finesse::Application.configure do
   config.assets.paths << Rails.root.join('app','assets','font')
   config.assets.precompile += %w(.svg .eot .woff .ttf)
   config.assets.precompile =  ['*.js', '*.css', '*.css.erb'] 
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end

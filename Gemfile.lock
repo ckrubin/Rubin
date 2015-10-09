@@ -67,6 +67,12 @@ GEM
       mimemagic (= 0.3.0)
     pg (0.18.2)
     polyglot (0.3.5)
+    postmark (1.7.0)
+      json
+      rake
+    postmark-rails (0.12.0)
+      actionmailer (>= 3.0.0)
+      postmark (~> 1.7.0)
     puma (2.13.4)
     rack (1.5.5)
     rack-test (0.6.3)
@@ -133,6 +139,7 @@ DEPENDENCIES
   jquery-turbolinks
   paperclip (~> 4.3)
   pg
+  postmark-rails
   puma
   rails (= 4.0.0)
   rails_12factor

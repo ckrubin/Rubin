@@ -25,6 +25,8 @@ Finesse::Application.routes.draw do
   get "pages/electrician"
   get "pages/pools"
 
+  get "testmailer_controller/message"
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
