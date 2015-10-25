@@ -144,9 +144,6 @@
                     <div class="entry-content">
                         <p>Устройство кровель</p>
                     </div>
-
-
-
                                     <li class="entry">
 <div class="entry-slider">
                         <ul>
@@ -166,7 +163,6 @@
             </ul>
         </section>
 <br>
-
         <section class="one-half">
             <h2>Подписаться на новости</h2>
             <div id="newsletter-wrap">
@@ -180,9 +176,17 @@
                     <p>Ваш почтовй ящик не может быть добавлен в список рассылки. Пожалуйста повторите запрос позже.</p>
                     <a href="#" class="notification-close notification-close-error">x</a>
                 </div>
+
+
+<%= form_for :subscriber, url: subscribers_url do |form| %>
+<%= form.submit %>
+<%= form.email_field :email %>
+<% end %>
+
+
                 <form id="newsletter-form" class="content-form clearfix" action="#" method="post">
                     
-                    <%= button_to "Добавить", testmailer_controller_message_path, :method => :get, :class => 'button' %>
+                    <%= button_to 'Добавить', :class => 'button' %>
                     <input id="newsletter" type="email" name="newsletter" placeholder="Введите свой e-mail адрес &hellip;" class="required">
                 </form>
                 <p class="tip"><span class="note">&#42;</span>Если письмо не приходит, проверьте папку спам в Вашем почтовом ящике.</p>

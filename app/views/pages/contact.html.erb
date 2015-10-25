@@ -49,6 +49,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     <p id="contact-notification-box-error-msg" data-default-msg="Ваше сообщение не может быть отправлено. Пожалуйста повторите позднее."></p>
                     <a href="#" class="notification-close notification-close-error">x</a>
                 </div>
+
+<%= form_for :question, url: questions_url do |form| %>
+<%= form.text_field :name %>
+<%= form.email_field :email %>
+<%= form.text_field :subject %>
+<%= form.text_field :message %>
+<%= form.submit %>
+<% end %>
+               
             <form id="contact-form" class="content-form" method="post" action="#">
                 <p>
                     <label for="name">Имя:<span class="note">*</span></label>

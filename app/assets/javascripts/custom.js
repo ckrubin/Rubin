@@ -1290,11 +1290,11 @@ jQuery(document).ready(function ($) {
             try {
                 var wrapper = $(this);
                 var settings = {
-                    username: "OooCKRubin", // Change username here
+                    username: "ckrubin", // Change username here
                     twitter_api_url: apiUrl,
                     join_text: false,
                     avatar_size: false, // you can activate the avatar
-                    count: 2, // number of tweets
+                    count: 3, // number of tweets
                     view_text: "смотреть на twitter.com",
                     just_now_text: "сейчас",
                     seconds_ago_text: "%d секунд назад",
@@ -1375,22 +1375,7 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    /* ---------------------------------------------------------------------- */
-    /* Flickr Widget
-     /* ---------------------------------------------------------------------- */
-
-    if ($().jflickrfeed) {
-
-        $('.flickr-feed').jflickrfeed({
-            limit: 6,
-            qstrings: {
-                id: '52617155@N08' // Flickr ID (Flickr IDs can be found using this tool: http://idgettr.com/)
-            },
-            itemTemplate: '<li><a href="{{link}}" title="{{title}}" target="_blank"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
-        });
-
-    }
-
+    
     /* ---------------------------------------------------------------------- */
     /* Google Maps
      /* ---------------------------------------------------------------------- */

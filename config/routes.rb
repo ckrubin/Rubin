@@ -1,4 +1,8 @@
 Finesse::Application.routes.draw do
+  resources :questions
+
+  resources :subscribers
+
   resources :works
 
   resources :testimonials
@@ -26,8 +30,6 @@ Finesse::Application.routes.draw do
   get "pages/pools"
 
   get "testmailer_controller/message"
-
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
