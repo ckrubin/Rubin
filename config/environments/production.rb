@@ -22,6 +22,20 @@ Finesse::Application.configure do
   # Disable Rails's static asset server (Apache or nginx will already do this).
   config.serve_static_assets = true
 
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :port => "587",
+    :domain => "mydomain.net",
+    :user_name => "ckrubinsamara@gmail.com",
+    :password => "PolinaM1",
+    :authentication => "plain",
+    :enable_starttls_auto => true
+  }
+
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   #config.assets.css_compressor = :sass
