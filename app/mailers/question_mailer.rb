@@ -3,6 +3,6 @@ class QuestionMailer < ActionMailer::Base
 
   def question_email(question)
   	@question = question
-  	mail to: "ckrubin@yandex.ru", subject: @question.subject
+  	mail to: "8877024@gmail.com", subject: @question.subject
   end
 end

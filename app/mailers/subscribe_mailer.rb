@@ -3,6 +3,6 @@ class SubscribeMailer < ActionMailer::Base
 
   def subscribe_email(subscriiber)
   	@subscriiber = subscriiber
-  	mail(to: @subscriiber.email, subject: "Подписка на новости", bcc: "ckrubin@yandex.ru")
+  	mail(to: @subscriiber.email, subject: "Подписка на новости", bcc: "8877024@gmail.com")
   end
 end
