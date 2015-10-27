@@ -4,7 +4,11 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Вы успешно подписаны на новостную рассылку компании ООО СК "Рубин"</h1>
-    <p>Hi <%= @question.name %></p>
+    <h3>Новое сообщение с сайта:</h3>
+    </br>
+    <p>Имя: <%= @question.name %></p>
+    <p>Email: <%= @question.email %></p>
+    </br>
+    <p>Сообщение: <%= @question.message %></p>
   </body>
 </html>

@@ -1,5 +1,5 @@
 class SubscribeMailer < ActionMailer::Base
-  default from: "admin@ckrubin.ru"
+  default from: "ckrubinsamara@gmail.com"
 
   def subscribe_email(subscriiber)
   	@subscriiber = subscriiber

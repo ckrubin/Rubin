@@ -177,18 +177,12 @@
                     <a href="#" class="notification-close notification-close-error">x</a>
                 </div>
 
+            <div>
 
-<%= form_for :subscriber, url: subscribers_url do |form| %>
-<%= form.submit %>
-<%= form.email_field :email %>
-<% end %>
-
-
-                <form id="newsletter-form" class="content-form clearfix" action="#" method="post">
-                    
-                    <%= button_to 'Добавить', :class => 'button' %>
-                    <input id="newsletter" type="email" name="newsletter" placeholder="Введите свой e-mail адрес &hellip;" class="required">
-                </form>
+                <%= form_for :subscriber, url: subscribers_url, :html => { :id => "newsletter-form", :class => "content-form clearfix" } do |form| %>
+                <%= form.email_field :email, id: "newsletter", :placeholder => "Введите свой e-mail адрес" %>
+                <%= form.submit "Подписаться", :class => "button" %>
+                <% end %>
                 <p class="tip"><span class="note">&#42;</span>Если письмо не приходит, проверьте папку спам в Вашем почтовом ящике.</p>
             </div>
         </section>

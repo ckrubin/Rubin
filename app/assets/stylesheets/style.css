@@ -575,14 +575,16 @@ input[type="submit"] {
 
 #newsletter-form input#newsletter {
 	float: left;
-	width: 330px;
+	width: 315px;
 	margin-right: 10px;
+	margin-top: 10px;
 }
 
 #newsletter-form input.button {
 	float: right;
 	margin-right: 0;
 	margin-bottom: 5px;
+	margin-top: 10px;
 }
 
 #newsletter-wrap .tip {
