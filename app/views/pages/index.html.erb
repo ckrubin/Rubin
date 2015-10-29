@@ -178,7 +178,6 @@
                 </div>
 
             <div>
-
                 <%= form_for :subscriber, url: subscribers_url, :html => { :id => "newsletter-form", :class => "content-form clearfix" } do |form| %>
                 <%= form.email_field :email, id: "newsletter", :placeholder => "Введите свой e-mail адрес" %>
                 <%= form.submit "Подписаться", :class => "button" %>

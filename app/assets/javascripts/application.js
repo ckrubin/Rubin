@@ -28,7 +28,6 @@
 //= require jquery.cycle.all
 //= require mediaelement-and-player.min
 //= require jquery.fitvids
-//= require jquery.tweet
 //= require jquery.touchSwipe.min
 //= require custom
 //= require responsive-tables

@@ -1,0 +1,25 @@
+Display timeline objects and rendering links in tweets
+
+Then,  we need to make URLs in tweets clickable, and it works simply by adding the gem twitter-text-rb in gemfile
+
+gem 'twitter-text'
+Now, update application_helper.rb:
+
+require 'twitter-text'
+module ApplicationHelper
+ 
+  include Twitter::Autolink
+ 
+  def twitter_text(text)
+    text = auto_link(text)
+    text ? text.html_safe : ''
+  end
+
+
+Finally,  let’s go to view and add this code:
+
+<% @tweet_news.each do |tweet| %>
+<ul>
+    <li><%= twitter_text(tweet.text) %></li>
+</ul>
+<% end %>
