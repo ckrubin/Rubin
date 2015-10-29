@@ -6,8 +6,8 @@ end
 
 	def self.client
 		@client ||= Twitter::REST::Client.new do |config|
-  			config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
-  			config.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
+  			config.consumer_key        = "nFvnpPBKxfw3hz3CFpfiBIP6d"
+  			config.consumer_secret     = "LGK7uwea4HtWuuT9qzzqVTG6qtxmelEscTxTjWNUmaJQ8E9w6s"
   		end
   	end
 end
