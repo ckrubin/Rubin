@@ -43,7 +43,7 @@
                             <ul>
                             <% TwitterApi.tweets.each do |t| %>
                                 <li>
-                                    <%= t.text %>
+                                <%= twitter_text(t.text) %>
                                 </li>
                             <% end %>
                             </ul>                     

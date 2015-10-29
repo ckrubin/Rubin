@@ -22,6 +22,7 @@ gem 'byebug'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'twitter'
+gem 'twitter-text'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
