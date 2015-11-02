@@ -15,20 +15,11 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
-# Debugger
-gem 'byebug'
-
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 gem 'twitter'
 gem 'twitter-text'
-
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
 
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
@@ -47,18 +38,20 @@ gem "paperclip", "~> 4.3"
 
 gem 'dotenv-rails'
 
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+
 gem 'jquery-turbolinks'
+
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+# gem 'turbolinks'
 
 # Typus is a control panel for Ruby on Rails applications to allow trusted users edit structured content.
 # gem "typus", github: "typus/typus", branch: "4-0-stable"
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
+
 
 # Use unicorn as the app server
 # gem 'unicorn'

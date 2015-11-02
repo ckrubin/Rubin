@@ -30,8 +30,7 @@ class SubscribersController < ApplicationController
       if @subscriber.save
 
         SubscribeMailer.subscribe_email(@subscriber).deliver
-
-        format.html { redirect_to @subscriber, notice: 'Subscriber was successfully added.' }
+        format.html { redirect_to root_path, notice: 'Подписка успешно добавлена.' }
         format.json { render action: 'show', status: :created, location: @subscriber }
       else
         format.html { render action: 'new' }

@@ -1,2 +1,9 @@
 convert html to pdf for price-list
-gem 'wicked_pdf' && gem 'wkhtmltopdf-binary'
+	gem 'wicked_pdf' && gem 'wkhtmltopdf-binary'
+
+add twitter posts to footer
+	http://www.webascender.com/Blog/ID/269/How-to-Add-Facebook-Comments-to-My-Website#.VjG4k9-XuXp
+	https://developers.facebook.com/docs/plugins/embedded-posts#mobilelayout
+
+add flash notice for subscribe && question action's
+	https://agilewarrior.wordpress.com/2014/04/26/how-to-add-a-flash-message-to-your-rails-page/
