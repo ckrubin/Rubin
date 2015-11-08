@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
+  
   def index
-  	@testimonials = Testimonial.order("RANDOM()")
+    @testimonials = Testimonial.order("RANDOM()")
   end
 
   def price

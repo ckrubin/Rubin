@@ -52,8 +52,19 @@
 
             <!-- begin footer bottom -->
             <div id="footer-bottom">
-            	<div class="center">
+            	<div class="left">
                 	<p>Все права защищены &copy; 2015 СК "Рубин"</p>
+                </div>
+                <div id="right">
+                <p>
+                    <% if user_signed_in? %>
+    <span>Здравствуйте, <%= current_user.email %></span> | 
+    <%= link_to 'Выйти', destroy_user_session_path, :method => :delete %>
+<% else %>
+    <%= link_to 'Войти', new_user_session_path %>
+<% end %>
+                </p>
+                    
                 </div>
             </div>
             <!-- end footer bottom -->

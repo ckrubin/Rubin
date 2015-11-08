@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
+<head>
 	<%= favicon_link_tag 'favicon.ico' %>
-
     <%= javascript_include_tag "ddlevelsmenu" %>
     
     <script type="text/javascript">
         ddlevelsmenu.setup("nav", "topbar");
     </script>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+</head>
+<body>
 
 <%= render "layouts/header" %>
 

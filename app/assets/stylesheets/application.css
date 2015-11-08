@@ -8,15 +8,9 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require style.css
- *= require flexslider.css
- *= require jquery.fancybox.css
- *= require mediaelementplayer.css
- *= require polyglot-language-switcher.css
- *= require shortcodes.css
- *= require color.css
- *= require ie.css
- *= require html5-reset.css
+ *= require "style"
+ *= require "color"
+ *= require "ie"
  *= require_self
  *= require_tree .
  */
