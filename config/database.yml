@@ -3,11 +3,11 @@ development:
   database: finesse_development
   host:     localhost
   username: postgres
-  password: dobermann
+  password: postgres
 
 production:
   adapter:  postgresql
   database: finesse_production
   host:     localhost
   username: postgres
-  password: dobermann
+  password: postgres

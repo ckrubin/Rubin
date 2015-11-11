@@ -45,6 +45,3 @@ gem 'jquery-turbolinks'
 gem 'devise'
 
 gem 'rails_admin'
-
-# Typus is a control panel for Ruby on Rails applications to allow trusted users edit structured content.
-# gem "typus", github: "typus/typus", branch: "4-0-stable"
