@@ -1,17 +1,15 @@
 Finesse::Application.routes.draw do
+  resources :projects
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   resources :questions
 
   resources :subscribers
 
-  resources :works
-
   resources :testimonials
 
-#  get "testimotionals/index"
-  resources :articles
-#  get "articles/index"
+#  get "testimotionals/index"#  get "articles/index"
 
   root "pages#index"
 

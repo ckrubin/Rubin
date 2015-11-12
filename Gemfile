@@ -33,7 +33,9 @@ gem 'puma'
 # Send an email with the Postmark Rails Gem 
 gem 'postmark-rails'
 
-gem 'carrierwave'
+gem "rmagick"
+
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 
 gem 'dotenv-rails'
 
