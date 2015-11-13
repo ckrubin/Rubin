@@ -25,11 +25,5 @@ module Finesse
     config.action_mailer.postmark_settings = { :api_token => "9258de02-ad6d-4fc6-82c6-5aa2d9503572" }
 
     config.autoload_paths << Rails.root.join('lib')
-
-  # Prevent initializing the application before assets are precompiled (required for heroku)
-  config.assets.initialize_on_precompile = false
-  # Add Rails Admin assets (required)
-  config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
-
   end
 end
