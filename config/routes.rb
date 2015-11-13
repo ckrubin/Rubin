@@ -1,15 +1,13 @@
 Finesse::Application.routes.draw do
-  resources :projects
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
   devise_for :users
+  
+  resources :projects
   resources :questions
-
   resources :subscribers
-
   resources :testimonials
-
-#  get "testimotionals/index"#  get "articles/index"
 
   root "pages#index"
 
@@ -29,7 +27,7 @@ Finesse::Application.routes.draw do
   get "pages/electrician"
   get "pages/pools"
 
-  get "testmailer_controller/message"
+  # get "testmailer_controller/message"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

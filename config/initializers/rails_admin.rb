@@ -1,5 +1,9 @@
 RailsAdmin.config do |config|
 
+  # Prevent initializing the application before assets are precompiled (required for heroku)
+  config.assets.initialize_on_precompile = false
+  # Add Rails Admin assets (required)
+  config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
   
   ### Popular gems integration
 
@@ -9,6 +13,7 @@ RailsAdmin.config do |config|
       redirect_to main_app.root_path
     end
   end
+
 
   ## == Cancan ==
   # config.authorize_with :cancan

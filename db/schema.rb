@@ -16,14 +16,6 @@ ActiveRecord::Schema.define(version: 20151112204927) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "articles", force: true do |t|
-    t.string   "title"
-    t.text     "text"
-    t.string   "image_url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "projects", force: true do |t|
     t.string   "title"
     t.string   "intro"
@@ -32,6 +24,8 @@ ActiveRecord::Schema.define(version: 20151112204927) do
     t.datetime "updated_at"
     t.string   "image"
   end
+
+  add_index "projects", ["title"], name: "index_projects_on_title", unique: true, using: :btree
 
   create_table "questions", force: true do |t|
     t.string   "name"
@@ -56,6 +50,9 @@ ActiveRecord::Schema.define(version: 20151112204927) do
     t.datetime "updated_at"
   end
 
+  add_index "testimonials", ["comment"], name: "index_testimonials_on_comment", unique: true, using: :btree
+  add_index "testimonials", ["author"], name: "index_testimonials_on_author", unique: true, using: :btree
+
   create_table "users", force: true do |t|
     t.boolean  "admin"
     t.string   "email",                  default: "", null: false
@@ -74,17 +71,5 @@ ActiveRecord::Schema.define(version: 20151112204927) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
-
-  create_table "works", force: true do |t|
-    t.string   "title"
-    t.text     "text"
-    t.string   "image"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
-    t.datetime "photo_updated_at"
-  end
 
 end
