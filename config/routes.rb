@@ -5,6 +5,7 @@ Finesse::Application.routes.draw do
   devise_for :users
   
   resources :projects
+  resources :tags, only: [:index, :show]
   resources :questions
   resources :subscribers
   resources :testimonials

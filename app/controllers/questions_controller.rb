@@ -30,7 +30,6 @@ class QuestionsController < ApplicationController
       if @question.save
 
         QuestionMailer.question_email(@question).deliver
-
         format.html { redirect_to @question, notice: 'Question was successfully created.' }
         format.json { render action: 'show', status: :created, location: @question }
       else

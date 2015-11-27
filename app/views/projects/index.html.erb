@@ -1,3 +1,4 @@
+<section id="content" class="container clearfix">
 <h1>Listing projects</h1>
 
 <table>
@@ -7,6 +8,8 @@
       <th>Intro</th>
       <th>Description</th>
       <th>Image</th>
+      <th>Tag</th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -20,6 +23,7 @@
         <td><%= project.intro %></td>
         <td><%= project.description %></td>
         <td><%= image_tag project.image_url(:thumb) %></td>
+        <td><%= project.tag_list.to_s.titleize %></td>
         <td><%= link_to 'Show', project %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>
         <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -31,3 +35,5 @@
 <br>
 
 <%= link_to 'New Project', new_project_path %>
+</section>
+

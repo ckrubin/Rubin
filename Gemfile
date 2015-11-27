@@ -44,6 +44,8 @@ gem 'jquery-rails'
 
 gem 'jquery-turbolinks'
 
+gem 'acts-as-taggable-on', '~> 3.4'
+
 gem 'devise'
 
 gem 'rails_admin'
