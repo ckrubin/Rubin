@@ -3,5 +3,4 @@
  *= require "color"
  *= require "ie"
  *= require_self
- *= require_tree .
 */
