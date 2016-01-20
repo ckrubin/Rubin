@@ -41,8 +41,9 @@ Finesse::Application.configure do
   #config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  # config.assets.compile = false
-  # config.assets.precompile += %w( *.js *.css )
+  config.assets.compile = false
+  config.assets.precompile += %w( *.js *.css .svg .eot .woff .ttf)
+  # config.assets.paths << Rails.root.join('app','assets','font')
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -92,8 +93,5 @@ Finesse::Application.configure do
   # config.autoflush_log = true
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
-  config.log_formatter = ::Logger::Formatter.new
-  config.assets.paths << Rails.root.join('app','assets','font')
-  config.assets.precompile += %w(.svg .eot .woff .ttf)
-  config.assets.precompile =  ['*.js', '*.css', '*.css.erb'] 
+  # config.log_formatter = ::Logger::Formatter.new
 end
