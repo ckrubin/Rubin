@@ -28,6 +28,7 @@ Finesse::Application.routes.draw do
   get "pages/electrician"
   get "pages/pools"
   get "pages/polymer_flooring"
+  get "pages/epox_flooring"
 
   # get "testmailer_controller/message"
 
