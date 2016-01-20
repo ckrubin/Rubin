@@ -26,7 +26,7 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-# gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
 
 gem 'puma'
 
