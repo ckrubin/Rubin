@@ -41,9 +41,13 @@ Finesse::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
+  config.cache_classes = true
+  config.serve_static_files = true
   config.assets.compile = true
-  config.assets.paths << Rails.root.join('app','assets','font')
-  config.assets.precompile += %w( *.js *.css)
+  config.assets.digest = true
+  #config.assets.compile = true
+  #config.assets.paths << Rails.root.join('app','assets','font')
+  #config.assets.precompile += %w( *.js *.css)
   
 
   # Generate digests for assets URLs.
