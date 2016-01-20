@@ -27,6 +27,7 @@ Finesse::Application.routes.draw do
   get "pages/sewerage"
   get "pages/electrician"
   get "pages/pools"
+  get "pages/polymer_flooring"
 
   # get "testmailer_controller/message"
 

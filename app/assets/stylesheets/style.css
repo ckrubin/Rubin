@@ -20,14 +20,10 @@ Author URI: http://www.ixtendo.com
 @import url(http://fonts.googleapis.com/css?family=Metrophobic); 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300italic,400italic,600italic,700italic,300,600,800,800italic);
 @import url(http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic);
-
 @import url('./html5-reset.css');
-
-/*@import url('./polyglot-language-switcher.css');*/
 @import url('./flexslider.css');
 @import url('./jquery.fancybox.css');
 @import url('./mediaelementplayer.css');
-
 @import url('./shortcodes.css');
 
 /* ---------------------------------------------------------------------- */
